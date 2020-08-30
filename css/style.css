@@ -271,6 +271,9 @@ h6 {
   .header__list li {
     margin: 0px 0px 20px 0px;
   }
+  .header__list li:last-child {
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .header__link {
@@ -1590,11 +1593,13 @@ h6 {
 }
 
 .form-newsletter__button:active {
-  background: url(/img/Acrtive.jpg) no-repeat center;
+  background: url(img/Acrtive.jpg) no-repeat center;
   background-size: cover;
   width: 209px;
   height: 90px;
   color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 1.2s ease 0s;
+  transition: all 1.2s ease 0s;
 }
 
 /*--------------------*/
