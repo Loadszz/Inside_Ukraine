@@ -102,6 +102,9 @@
 }
 
 .footer-banner-slider {
+	@media (max-width: 1000px) {
+		display: none;
+	}
 	text-align: center;
 	width: 1000px;
 	height: 100px;
@@ -150,6 +153,9 @@
 .highlights {
 	padding: 90px 0px 0px 0px;
 	min-width: 0px;
+	@media (max-width: 1000px) {
+		padding: 60px 0px 0px 0px;
+	}
 	&__header {
 		justify-content: center;
 		text-align: center;
@@ -292,6 +298,9 @@
 }
 
 .slider-num {
+	@media (max-width: 767px) {
+		display: none;
+	}
 	position: absolute;
 	bottom: 143px;
 	margin: 0px 0px 0px 28px;

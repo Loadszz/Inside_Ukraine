@@ -70,14 +70,27 @@ $(document).ready(function () {
 				}
 			},
 			{
-				breakpoint: 767,
+				breakpoint: 993,
 				settings: {
-					slidesToShow: 1
+					slidesToShow: 1,
+					arrows: false
 				}
 			}
 		]
 	});
 });
+
+jQuery(window).on('resize', function () {
+	var viewportWidth = jQuery(window).width();
+
+	if (viewportWidth < 767) {
+		$('.highlights-slider__body').slick('unslick');
+	} else {
+		// Do some thing
+	}
+});
+
+
 
 $('.highlights-slider__body').each(function () {
 

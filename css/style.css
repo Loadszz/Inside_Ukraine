@@ -230,10 +230,10 @@ h6 {
   .header__menu {
     position: fixed;
     top: -100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 100%;
-    background-color: #1fb5a4;
+    background: #000000;
     padding: 70px 10px 20px 10px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -269,10 +269,10 @@ h6 {
 
 @media (max-width: 767px) {
   .header__list li {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 20px;
   }
   .header__list li:last-child {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
   }
 }
 
@@ -297,25 +297,6 @@ h6 {
   border-radius: 3px;
 }
 
-.content {
-  padding: 100px 0px 0px 0px;
-}
-
-@media (max-width: 767px) {
-  .content {
-    padding: 70px 0px 0px 0px;
-  }
-}
-
-.content__text {
-  font-family: 18px;
-  line-height: 25px;
-}
-
-.content__text p {
-  margin: 0px 0px 20px 0px;
-}
-
 /* Слайдер */
 /* Слайдер запущен */
 /* Слайдер с точками */
@@ -323,6 +304,12 @@ h6 {
 .slick-list {
   overflow: hidden;
   padding: 0px 0px 55px 0px;
+}
+
+@media (max-width: 1000px) {
+  .slick-list {
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 /* Лента слайдов */
@@ -350,8 +337,7 @@ h6 {
 
 @media (max-width: 767px) {
   .highlights-slider__body .slick-arrow {
-    width: 40px;
-    height: 40px;
+    display: none;
   }
 }
 
@@ -517,6 +503,12 @@ h6 {
   background: #ffffff;
 }
 
+@media (max-width: 1000px) {
+  .footer-banner-slider {
+    display: none;
+  }
+}
+
 .footer-banner-slider__text {
   font-family: Montserrat;
   font-style: normal;
@@ -558,6 +550,12 @@ h6 {
 .highlights {
   padding: 90px 0px 0px 0px;
   min-width: 0px;
+}
+
+@media (max-width: 1000px) {
+  .highlights {
+    padding: 60px 0px 0px 0px;
+  }
 }
 
 .highlights__header {
@@ -719,6 +717,12 @@ h6 {
   font-size: 48px;
   line-height: 59px;
   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .slider-num {
+    display: none;
+  }
 }
 
 .slider-num span {

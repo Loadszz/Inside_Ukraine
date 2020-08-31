@@ -109,10 +109,10 @@
 	@media (max-width: 767px) {
 		position: fixed;
 		top: -100%;
-		left: 0;
-		width: 100%;
+		right: 0;
+		width: 50%;
 		height: 100%;
-		background-color: #1fb5a4;
+		background: #000000;
 		padding: 70px 10px 20px 10px;
 		transition: all 0.3s ease 0s;
 	}
@@ -135,9 +135,9 @@
 			margin: 0px 52px 0px 31px;
 		}
 		@media (max-width: 767px) {
-			margin: 0px 0px 20px 0px;
+			margin: 0px 0px 20px 20px;
 			&:last-child {
-				margin: 0px 0px 0px 0px;
+				margin: 0px 0px 0px 20px;
 			}
 		}
 	}
@@ -161,20 +161,5 @@
 			bottom: -43px;
 			border-radius: 3px;
 		}
-	}
-}
-
-.content {
-	padding: 100px 0px 0px 0px;
-	@media (max-width: 767px) {
-		padding: 70px 0px 0px 0px;
-	}
-}
-
-.content__text {
-	font-family: 18px;
-	line-height: 25px;
-	p {
-		margin: 0px 0px 20px 0px;
 	}
 }
