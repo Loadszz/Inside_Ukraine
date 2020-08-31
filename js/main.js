@@ -72,23 +72,22 @@ $(document).ready(function () {
 			{
 				breakpoint: 993,
 				settings: {
-					slidesToShow: 1,
-					arrows: false
+					slidesToShow: 1
 				}
 			}
 		]
 	});
 });
 
-jQuery(window).on('resize', function () {
-	var viewportWidth = jQuery(window).width();
+// jQuery(window).on('resize', function () {
+// 	var viewportWidth = jQuery(window).width();
 
-	if (viewportWidth < 767) {
-		$('.highlights-slider__body').slick('unslick');
-	} else {
-		// Do some thing
-	}
-});
+// 	if (viewportWidth < 767) {
+// 		$('.highlights-slider__body').slick('unslick');
+// 	} else {
+// 		// Do some thing
+// 	}
+// });
 
 
 

@@ -335,12 +335,6 @@ h6 {
   height: 50px;
 }
 
-@media (max-width: 767px) {
-  .highlights-slider__body .slick-arrow {
-    display: none;
-  }
-}
-
 /* Стрелка влево */
 .highlights-slider__body .slick-arrow.slick-prev {
   background: url(/img/previous.png) 0 0/100% no-repeat;
@@ -558,6 +552,12 @@ h6 {
   }
 }
 
+@media (max-width: 600px) {
+  .highlights {
+    display: none;
+  }
+}
+
 .highlights__header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -719,9 +719,9 @@ h6 {
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 993px) {
   .slider-num {
-    display: none;
+    font-size: 28px;
   }
 }
 
@@ -1172,10 +1172,26 @@ h6 {
           order: 2;
 }
 
+@media (max-width: 767px) {
+  .priests_rev .priests__column {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .priests_rev .priests__column_r {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+@media (max-width: 767px) {
+  .priests_rev .priests__column_r {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .priests__row {
@@ -1184,6 +1200,16 @@ h6 {
   display: flex;
   background: #000000;
   padding: 120px 0px 0px 0px;
+}
+
+@media (max-width: 767px) {
+  .priests__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .priests__column {
@@ -1211,6 +1237,12 @@ h6 {
   top: 0;
 }
 
+@media (max-width: 767px) {
+  .image-priests__bg {
+    padding: 0px 0px 50% 0px;
+  }
+}
+
 .extreame .ibg {
   background-position: center;
   background-size: cover;
@@ -1234,6 +1266,13 @@ h6 {
   padding: 0px 0px 17.7% 0px;
 }
 
+@media (max-width: 767px) {
+  .priests-inner {
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+  }
+}
+
 .priests-inner__tittle {
   font-family: Playfair Display;
   font-style: normal;
@@ -1242,6 +1281,12 @@ h6 {
   line-height: 37px;
   color: #ffffff;
   margin: 81px 0px 60px 0px;
+}
+
+@media (max-width: 767px) {
+  .priests-inner__tittle {
+    margin: 61px 0px 40px 0px;
+  }
 }
 
 .priests-inner__text {
@@ -1288,10 +1333,25 @@ h6 {
   padding: 120px 0px 0px 0px;
 }
 
+@media (max-width: 767px) {
+  .promo {
+    padding: 40px 0px 0px 0px;
+  }
+}
+
 .promo__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .promo__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .promo__column {
@@ -1307,6 +1367,18 @@ h6 {
 
 .promo__column:last-child {
   margin: 0px 60px 0px 0px;
+}
+
+@media (max-width: 767px) {
+  .promo__column {
+    margin: 0px 0px 0px 0px;
+  }
+  .promo__column:first-child {
+    margin: 0px 0px 0px 0px;
+  }
+  .promo__column:last-child {
+    margin: 0px 0px 0px 0px;
+  }
 }
 
 .header-promo {

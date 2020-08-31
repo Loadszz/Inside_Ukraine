@@ -156,6 +156,9 @@
 	@media (max-width: 1000px) {
 		padding: 60px 0px 0px 0px;
 	}
+	@media (max-width: 600px) {
+		display: none;
+	}
 	&__header {
 		justify-content: center;
 		text-align: center;
@@ -298,9 +301,6 @@
 }
 
 .slider-num {
-	@media (max-width: 767px) {
-		display: none;
-	}
 	position: absolute;
 	bottom: 143px;
 	margin: 0px 0px 0px 28px;
@@ -310,6 +310,9 @@
 	font-size: 48px;
 	line-height: 59px;
 	color: #ffffff;
+	@media (max-width: 993px) {
+		font-size: 28px;
+	}
 	span {
 		margin: 0px 19px 0px 0px;
 		&::before {
@@ -682,8 +685,14 @@
 	&_rev {
 		.priests__column {
 			order: 2;
+			@media (max-width: 767px) {
+				order: 1;
+			}
 			&_r {
 				order: 1;
+				@media (max-width: 767px) {
+					order: 2;
+				}
 			}
 		}
 	}
@@ -692,6 +701,10 @@
 		display: flex;
 		background: #000000;
 		padding: 120px 0px 0px 0px;
+		@media (max-width: 767px) {
+			flex-direction: column;
+			padding: 0px 0px 0px 0px;
+		}
 	}
 
 	&__column {
@@ -711,6 +724,9 @@
 		height: 100%;
 		left: 0;
 		top: 0;
+		@media (max-width: 767px) {
+			padding: 0px 0px 50% 0px;
+		}
 	}
 }
 
@@ -735,6 +751,10 @@
 	text-align: left;
 	margin: 0px 0px 0px 50px;
 	padding: 0px 0px 17.7% 0px;
+	@media (max-width: 767px) {
+		text-align: center;
+		margin: 0px 50px 0px 50px;
+	}
 	&__tittle {
 		font-family: Playfair Display;
 		font-style: normal;
@@ -743,6 +763,9 @@
 		line-height: 37px;
 		color: #ffffff;
 		margin: 81px 0px 60px 0px;
+		@media (max-width: 767px) {
+			margin: 61px 0px 40px 0px;
+		}
 	}
 
 	&__text {
@@ -787,9 +810,15 @@
 
 .promo {
 	padding: 120px 0px 0px 0px;
+	@media (max-width: 767px) {
+		padding: 40px 0px 0px 0px;
+	}
 
 	&__row {
 		display: flex;
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
 	}
 
 	&__column {
@@ -800,6 +829,15 @@
 		}
 		&:last-child {
 			margin: 0px 60px 0px 0px;
+		}
+		@media (max-width: 767px) {
+			margin: 0px 0px 0px 0px;
+			&:first-child {
+				margin: 0px 0px 0px 0px;
+			}
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
 		}
 	}
 }

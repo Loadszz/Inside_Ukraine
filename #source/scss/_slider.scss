@@ -43,9 +43,6 @@
 	font-size: 0;
 	width: 50px;
 	height: 50px;
-	@media (max-width: 767px) {
-		display: none;
-	}
 }
 /* Стрелка влево */
 .highlights-slider__body .slick-arrow.slick-prev {
