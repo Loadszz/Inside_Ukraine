@@ -87,6 +87,11 @@
 	text-align: center;
 	padding: 256px 0px 284px 0px;
 	position: relative;
+	&:hover {
+		background: #000000;
+		mix-blend-mode: normal;
+		opacity: 0.6;
+	}
 	&__content {
 		position: relative;
 		z-index: 2;
@@ -204,6 +209,7 @@
 	&__column-r {
 		flex: 0 1 25%;
 		min-width: 0;
+		opacity: 0.6;
 	}
 
 	&__inner {
@@ -1167,12 +1173,15 @@
 		padding: 26px 43px 25px 44px;
 		cursor: pointer;
 		&:active {
-			background: url(img/Acrtive.jpg) no-repeat center;
+			background: url(/img/Acrtive.jpg) no-repeat center;
 			background-size: cover;
-			width: 209px;
-			height: 90px;
+			padding: 26px 43px 25px 44px;
 			color: rgba(0, 0, 0, 0);
-			transition: all 1.2s ease 0s;
+			transition: all 0.3s ease 0s;
+			@media (max-width: 922px) {
+				padding: 13px 21px 12px 22px;
+				background-size: 100% 100%;
+			}
 		}
 		@media (max-width: 992px) {
 			font-size: 12px;

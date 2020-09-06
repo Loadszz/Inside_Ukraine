@@ -351,7 +351,7 @@ h6 {
 
 /* Стрелка вправо */
 .highlights-slider__body .slick-arrow.slick-next {
-  background: url(/img/next.jpg) 0 0/100% no-repeat;
+  background: url(/img/next.png) 0 0/100% no-repeat;
   left: 0;
   top: 126px;
   border: 7px solid #96afbb;
@@ -367,14 +367,24 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 55%;
+}
+
+@media (max-width: 992px) {
+  .slick-dots {
+    top: 60%;
+  }
 }
 
 .slick-dots li {
   list-style: none;
-  margin: 0px 10px 0px 0px;
   visibility: hidden;
 }
 
@@ -385,24 +395,10 @@ h6 {
 
 /* Элемент точки */
 .slick-dots li button {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 59px;
-  color: #ffffff;
-  background: #002335;
-}
-
-.slick-dots li button::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #71acff;
-  bottom: -43px;
-  border-radius: 3px;
+  font-size: 0;
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
 }
 
 .highlights-slider__body .slick-list {
@@ -481,6 +477,12 @@ h6 {
   text-align: center;
   padding: 256px 0px 284px 0px;
   position: relative;
+}
+
+.item-banner-slider:hover {
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 
 .item-banner-slider__content {
@@ -614,6 +616,7 @@ h6 {
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   min-width: 0;
+  opacity: 0.6;
 }
 
 .main__inner {
@@ -1798,13 +1801,19 @@ h6 {
 }
 
 .form-newsletter__button:active {
-  background: url(img/Acrtive.jpg) no-repeat center;
+  background: url(/img/Acrtive.jpg) no-repeat center;
   background-size: cover;
-  width: 209px;
-  height: 90px;
+  padding: 26px 43px 25px 44px;
   color: rgba(0, 0, 0, 0);
-  -webkit-transition: all 1.2s ease 0s;
-  transition: all 1.2s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 922px) {
+  .form-newsletter__button:active {
+    padding: 13px 21px 12px 22px;
+    background-size: 100% 100%;
+  }
 }
 
 @media (max-width: 992px) {

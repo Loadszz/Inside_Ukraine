@@ -37,6 +37,7 @@ ibg();
 $(document).ready(function () {
 	$('.banner-slider__body').slick({
 		arrows: false,
+		dots: true,
 		autoplay: false,
 		autoplaySpeed: 4000,
 		infinite: true,

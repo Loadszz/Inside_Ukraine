@@ -53,7 +53,7 @@
 }
 /* Стрелка вправо */
 .highlights-slider__body .slick-arrow.slick-next {
-	background: url(/img/next.jpg) 0 0 / 100% no-repeat;
+	background: url(/img/next.png) 0 0 / 100% no-repeat;
 	left: 0;
 	top: 126px;
 	border: 7px solid #96afbb;
@@ -66,13 +66,17 @@
 .slick-dots {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	position: absolute;
-	left: 0;
-	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	top: 55%;
+	@media (max-width: 992px) {
+		top: 60%;
+	}
 }
 .slick-dots li {
 	list-style: none;
-	margin: 0px 10px 0px 0px;
 	visibility: hidden;
 }
 /* Активная точка */
@@ -81,23 +85,10 @@
 }
 /* Элемент точки */
 .slick-dots li button {
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 48px;
-	line-height: 59px;
-	color: #ffffff;
-	background: #002335;
-	&::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: 4px;
-		background-color: #71acff;
-		bottom: -43px;
-		border-radius: 3px;
-	}
+	font-size: 0;
+	width: 30px;
+	height: 3px;
+	background: #ffffff;
 }
 
 .highlights-slider__body .slick-list {
