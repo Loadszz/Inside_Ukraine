@@ -246,7 +246,7 @@ h6 {
     top: -100%;
     right: 0;
     width: 50%;
-    height: 50%;
+    height: auto;
     background: #000000;
     padding: 70px 10px 20px 10px;
     -webkit-transition: all 0.3s ease 0s;
@@ -578,7 +578,6 @@ h6 {
 /*--------------------*/
 .highlights {
   padding: 90px 0px 0px 0px;
-  min-width: 0px;
 }
 
 @media (max-width: 1000px) {
