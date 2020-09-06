@@ -103,3 +103,4 @@ $('.highlights-slider__body').each(function () {
 		$status.html('<span>' + (((i) < 10) ? "0" + (i) : i) + '</span>' + '<small>' + (((slick.slideCount) < 10) ? "0" + (slick.slideCount) : slick.slideCount) + '</<small>');
 	});
 });
+
