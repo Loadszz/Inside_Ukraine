@@ -38,12 +38,11 @@ $(document).ready(function () {
 	$('.banner-slider__body').slick({
 		arrows: false,
 		dots: true,
-		autoplay: false,
-		autoplaySpeed: 4000,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		// adaptiveHeight: true,
 		responsive: [
 			{
 				breakpoint: 767,
@@ -59,8 +58,9 @@ $(document).ready(function () {
 	$('.highlights-slider__body').slick({
 		arrows: true,
 		dots: false,
-		autoplay: false,
-		autoplaySpeed: 4000,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		responsive: [

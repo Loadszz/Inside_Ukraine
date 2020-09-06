@@ -588,7 +588,8 @@ h6 {
 
 @media (max-width: 600px) {
   .highlights {
-    display: none;
+    height: 0px;
+    overflow: hidden;
   }
 }
 
@@ -673,17 +674,14 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 0px;
 }
 
 .highlights-slider__body {
-  min-width: 0px;
   position: relative;
   padding: 0px 50px 0px 181px;
 }
 
 .body-highlights-slider {
-  min-width: 0px;
   margin: 0px 35px 0px 0px;
 }
 
@@ -1870,6 +1868,10 @@ h6 {
 /*----------------------------------------------------------------------------------------------------------------------------------------------------*/
 .footer__header {
   padding: 60px 0px 0px 0px;
+}
+
+.footer__header img {
+  width: 100%;
 }
 
 .footer__bg {
