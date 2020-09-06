@@ -161,7 +161,8 @@
 		padding: 60px 0px 0px 0px;
 	}
 	@media (max-width: 600px) {
-		display: none;
+		height: 0px;
+		overflow: hidden;
 	}
 	&__header {
 		justify-content: center;
@@ -234,16 +235,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-width: 0px;
+
 	&__body {
-		min-width: 0px;
 		position: relative;
 		padding: 0px 50px 0px 181px;
 	}
 }
 
 .body-highlights-slider {
-	min-width: 0px;
 	margin: 0px 35px 0px 0px;
 	&__bg {
 		img {
@@ -1218,6 +1217,9 @@
 .footer {
 	&__header {
 		padding: 60px 0px 0px 0px;
+		img {
+			width: 100%;
+		}
 	}
 
 	&__bg {
