@@ -143,6 +143,12 @@ h6 {
   }
 }
 
+@media (max-height: 767px) {
+  .row-header {
+    height: 80px;
+  }
+}
+
 .row-header__logo {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100px;
